@@ -135,7 +135,7 @@ bash all_initialize_runall.sh
 
 A full walkthrough of how MiniDrop works — including how to inspect FASTQ/BAM files, understand barcodes and UMIs, and interpret each pipeline step — is provided in the tutorial:
 
-👉 **[MiniDrop Tutorial (HTML)](https://keita-iida.github.io/MiniDrop/index.html)**
+👉 **[MiniDrop Tutorial (HTML)](https://keita-iida.github.io/MiniDrop/docs/tutorial_minidrop.html)**
 
 This tutorial covers:
 
