@@ -13,7 +13,7 @@ MiniDrop is ideal for:
 
 <br>
 
-<img src="vignettes/figure_001.png" width="500px">
+<img src="figures/figure_001.png" width="500px">
 
 ---
 
