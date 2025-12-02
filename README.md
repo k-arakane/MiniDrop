@@ -3,6 +3,10 @@
 **MiniDrop** is a compact, easy-to-follow collection of code and explanations for droplet-based experiments, algorithms, and implementation methods.  
 The two main learning resources are the **Prior Knowledge** page and the **Hands-on Tutorial**, both hosted on GitHub Pages.
 
+<br>
+
+<img src="figures/figure_001.png" width="500px">
+
 ---
 
 ## Prior Knowledge (recommended)
@@ -32,20 +36,6 @@ The tutorial covers:
 - Project structure  
 - Example scripts (droplet generation, manipulation, etc.)  
 - How to reproduce results and extend examples  
-
----
-
-## Repository Structure
-
-```text
-MiniDrop/
-├── docs/               # Documentation (GitHub Pages)
-├── src/                # Source code
-├── examples/           # Tutorial example scripts
-├── tests/              # Optional test cases
-├── LICENSE
-└── README.md
-```
 
 ---
 
