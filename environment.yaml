@@ -1,0 +1,10 @@
+name: minidrop
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - dropseq_tools=2.5.1
+  - openjdk=11
+  - picard=2.20.4
+  - samtools=1.6
+  - star=2.7.11b

@@ -22,17 +22,24 @@ and one gene - MYC (ENSG00000136997).
 This tutorial requires a computational environment with the following tools
 installed:
 
-* samtools
-* Picard
-* Dropseq Tools
-* STAR
+* samtools: 1.6
+* Picard: 2.20.4
+* Dropseq Tools: 2.5.1
+* STAR: 2.7.11b
 
-It is recommended to use miniconda to manage the installation of these tools:
+The versions listed above were used during development and testing.
 
-$ conda install samtools
-$ conda install picard
-$ conda install dropseq_tools
-$ conda install star
+It is recommended to use miniconda to manage the installation of these tools.
+You can create a conda environment and install the required tools using the
+provided environment.yaml file:
+
+$ conda env create -f environment.yaml
+$ conda activate minidrop
+
+During our tests, pinning the OpenJDK version to 11 helped avoid compatibility issues
+between Dropseq Tools and Picard:
+
+$ conda install openjdk=11  # if not already installed
 
 You will also need to prepare the following input files:
 
