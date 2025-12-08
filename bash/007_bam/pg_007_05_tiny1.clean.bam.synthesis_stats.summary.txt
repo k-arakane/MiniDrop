@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:764071ae3d167e7036150f5c2e8848b181b524cf6066e230de74a9b6c4b449d0
-size 218
+
+## METRICS CLASS	org.broadinstitute.dropseqrna.beadsynthesis.BeadSynthesisErrorsSummaryMetric
+NUM_BEADS	NO_ERROR	SYNTHESIS_MISSING_BASE	SINGLE_UMI_ERROR	PRIMER_MATCH	FIXED_FIRST_BASE	OTHER_ERROR_COUNT
+0	0	0	0	0	0	0
+
+

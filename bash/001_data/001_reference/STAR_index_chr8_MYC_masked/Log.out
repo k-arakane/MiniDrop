@@ -1,3 +1,81 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6eb1397df2cd1b23ba39a97a741203d07650d6f4c418d649393e715c947489d8
-size 5167
+STAR version=2.7.11b
+STAR compilation time,server,dir=2024-11-25T09:14:51+0000 :/opt/conda/conda-bld/star_1732525954305/work/source
+##### Command Line:
+/home/keita/miniconda3/bin/STAR-avx2 --runThreadN 4 --runMode genomeGenerate --genomeDir 001_data/001_reference/STAR_index_chr8_MYC_masked --genomeFastaFiles 001_data/001_reference/chr8_MYC_masked.fa --sjdbGTFfile 001_data/001_reference/myc.gtf --sjdbOverhang 100 --genomeSAindexNbases 10
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+runThreadN                    4     ~RE-DEFINED
+runMode                       genomeGenerate        ~RE-DEFINED
+genomeDir                     001_data/001_reference/STAR_index_chr8_MYC_masked     ~RE-DEFINED
+genomeFastaFiles              001_data/001_reference/chr8_MYC_masked.fa        ~RE-DEFINED
+sjdbGTFfile                   001_data/001_reference/myc.gtf     ~RE-DEFINED
+sjdbOverhang                  100     ~RE-DEFINED
+genomeSAindexNbases           10     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           genomeGenerate   
+runThreadN                        4
+genomeDir                         001_data/001_reference/STAR_index_chr8_MYC_masked
+genomeFastaFiles                  001_data/001_reference/chr8_MYC_masked.fa   
+genomeSAindexNbases               10
+sjdbGTFfile                       001_data/001_reference/myc.gtf
+sjdbOverhang                      100
+
+-------------------------------
+##### Final effective command line:
+/home/keita/miniconda3/bin/STAR-avx2   --runMode genomeGenerate      --runThreadN 4   --genomeDir 001_data/001_reference/STAR_index_chr8_MYC_masked   --genomeFastaFiles 001_data/001_reference/chr8_MYC_masked.fa      --genomeSAindexNbases 10   --sjdbGTFfile 001_data/001_reference/myc.gtf   --sjdbOverhang 100
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Finished loading and checking parameters
+--genomeDir directory created: 001_data/001_reference/STAR_index_chr8_MYC_masked/
+Dec 02 13:56:58 ... starting to generate Genome files
+001_data/001_reference/chr8_MYC_masked.fa : chr # 0  "8" chrStart: 0
+Chromosome sequence lengths: 
+8	145138636
+Genome sequence total length = 145138636
+Genome size with padding = 145227776
+Dec 02 13:56:58 ..... processing annotations GTF
+Processing pGe.sjdbGTFfile=001_data/001_reference/myc.gtf, found:
+		15 transcripts
+		38 exons (non-collapsed)
+		12 collapsed junctions
+Total junctions: 12
+Dec 02 13:56:58 ..... finished GTF processing
+
+Estimated genome size with padding and SJs: total=genome+SJ=346227776 = 145227776 + 201000000
+GstrandBit=32
+Number of SA indices: 15034
+Dec 02 13:56:59 ... starting to sort Suffix Array. This may take a long time...
+Number of chunks: 4;   chunks size limit: 40088 bytes
+Dec 02 13:56:59 ... sorting Suffix Array chunks and saving them to disk...
+Writing 39496 bytes into 001_data/001_reference/STAR_index_chr8_MYC_masked//SA_0 ; empty space on disk = 401463701504 bytes ... done
+Writing 39728 bytes into 001_data/001_reference/STAR_index_chr8_MYC_masked//SA_1 ; empty space on disk = 401463660544 bytes ... done
+Writing 39600 bytes into 001_data/001_reference/STAR_index_chr8_MYC_masked//SA_2 ; empty space on disk = 401463619584 bytes ... done
+Writing 1448 bytes into 001_data/001_reference/STAR_index_chr8_MYC_masked//SA_3 ; empty space on disk = 401463578624 bytes ... done
+Dec 02 13:56:59 ... loading chunks from disk, packing SA...
+Dec 02 13:56:59 ... finished generating suffix array
+Dec 02 13:56:59 ... generating Suffix Array index
+Dec 02 13:56:59 ... completed Suffix Array index
+Dec 02 13:56:59   Finished preparing junctions
+Dec 02 13:56:59 ..... inserting junctions into the genome indices
+Dec 02 13:56:59   Finished SA search: number of new junctions=12, old junctions=0
+Dec 02 13:56:59   Finished sorting SA indicesL nInd=4800
+Genome size with junctions=145230188  145227776   2412
+GstrandBit1=32   GstrandBit=32
+Dec 02 13:56:59   Finished inserting junction indices
+Dec 02 13:56:59   Finished SAi
+Dec 02 13:56:59 ..... finished inserting junctions into genome
+Dec 02 13:56:59 ... writing Genome to disk ...
+Writing 145230188 bytes into 001_data/001_reference/STAR_index_chr8_MYC_masked//Genome ; empty space on disk = 401463685120 bytes ... done
+SA size in bytes: 81819
+Dec 02 13:56:59 ... writing Suffix Array to disk ...
+Writing 81819 bytes into 001_data/001_reference/STAR_index_chr8_MYC_masked//SA ; empty space on disk = 401318453248 bytes ... done
+Dec 02 13:56:59 ... writing SAindex to disk
+Writing 8 bytes into 001_data/001_reference/STAR_index_chr8_MYC_masked//SAindex ; empty space on disk = 401318371328 bytes ... done
+Writing 88 bytes into 001_data/001_reference/STAR_index_chr8_MYC_masked//SAindex ; empty space on disk = 401318371328 bytes ... done
+Writing 6116691 bytes into 001_data/001_reference/STAR_index_chr8_MYC_masked//SAindex ; empty space on disk = 401318371328 bytes ... done
+Dec 02 13:56:59 ..... finished successfully
+DONE: Genome generation, EXITING

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:31e0f48ad9b3b0c379f8f74dc65889ffff938440a0d605bfebb5e175ed4c9322
-size 149
+
+## METRICS CLASS	org.broadinstitute.dropseqrna.readtrimming.PolyATrimmer$TrimMetric
+mean	stdev
+44	?
+
+## HISTOGRAM	java.lang.Integer
+BIN	VALUE
+44	1
+

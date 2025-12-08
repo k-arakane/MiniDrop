@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6eefb1bc5336fc0f29a1a7904e023362af48d84856774498677c76718a22ebd
-size 672
+#!/bin/sh
+
+DIR1=007_bam
+INCOMING=${DIR1}/pg_007_04_tiny1.clean_substitution.bam
+OUTGOING=${DIR1}/pg_007_05_tiny1.clean.bam
+#-----------------------------------------------------------------------------80
+# Fixed bead error (composite).
+#-----------------------------------------------------------------------------80
+DetectBeadSynthesisErrors \
+  I=${INCOMING} \
+  O=${OUTGOING} \
+  REPORT=${OUTGOING}.clean.indel_report.txt \
+  OUTPUT_STATS=${OUTGOING}.synthesis_stats.txt \
+  SUMMARY=${OUTGOING}.synthesis_stats.summary.txt \
+  PRIMER_SEQUENCE=AAGCAGTGGTATCAACGCAGAGTAC \
+  TMP_DIR=${DIR1}/tmp
+
+samtools view -h ${OUTGOING} > ${OUTGOING}.sam
+samtools index ${OUTGOING}
+

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb428f07911b547ec440fd9a9c4a632b162fc48fdd5714c0624ca975b2151ec2
-size 793
+### /home/keita/miniconda3/bin/STAR-avx2   --runMode genomeGenerate      --runThreadN 4   --genomeDir 001_data/001_reference/STAR_index_chr8_MYC_masked   --genomeFastaFiles 001_data/001_reference/chr8_MYC_masked.fa      --genomeSAindexNbases 10   --sjdbGTFfile 001_data/001_reference/myc.gtf   --sjdbOverhang 100
+### GstrandBit 32
+versionGenome	2.7.4a
+genomeType	Full
+genomeFastaFiles	001_data/001_reference/chr8_MYC_masked.fa 
+genomeSAindexNbases	10
+genomeChrBinNbits	18
+genomeSAsparseD	1
+genomeTransformType	None
+genomeTransformVCF	-
+sjdbOverhang	100
+sjdbFileChrStartEnd	- 
+sjdbGTFfile	001_data/001_reference/myc.gtf
+sjdbGTFchrPrefix	-
+sjdbGTFfeatureExon	exon
+sjdbGTFtagExonParentTranscript	transcript_id
+sjdbGTFtagExonParentGene	gene_id
+sjdbInsertSave	Basic
+genomeFileSizes	145230188 81819

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:761dc7ab01fd4d95f943d028e62d3732b0ad019a40af4ec3c96a14bd8657a93a
-size 559
+#!/bin/sh
+
+DIR1=005_bam
+DIR2=007_bam
+REF=001_data/001_reference/genes.refFlat
+UNMAPPED=${DIR1}/pg_005_06_tiny1.cb.umi.qc.woAdapter.trimPolyA.bam
+INCOMING=${DIR2}/pg_007_02_tiny1.merged.bam
+OUTGOING=${DIR2}/pg_007_03_tiny1.star_gene_exon_tagged.bam
+#-----------------------------------------------------------------------------80
+# Add gene information.
+#-----------------------------------------------------------------------------80
+TagReadWithGeneFunction I=${INCOMING} O=${OUTGOING} ANNOTATIONS_FILE=${REF}
+
+samtools view -h ${OUTGOING} > ${OUTGOING}.sam
+

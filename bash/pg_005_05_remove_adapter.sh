@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94f450a24cf06c6f8f9645608ee7a5bdad86a0aa471ae8712adf1b05b3ffd971
-size 581
+#!/bin/sh
+
+DIR1=005_bam
+INCOMING=${DIR1}/pg_005_04_tiny1.cb.umi.qc.bam
+OUTGOING=${DIR1}/pg_005_05_tiny1.cb.umi.qc.woAdapter.bam
+#-----------------------------------------------------------------------------80
+# Remove potential SMART adapter sequence (start site trimming).
+#-----------------------------------------------------------------------------80
+TrimStartingSequence \
+  INPUT=${INCOMING} \
+  OUTPUT=${OUTGOING} \
+  OUTPUT_SUMMARY=${OUTGOING}.report.txt \
+  SEQUENCE=AAGCAGTGGTATCAACGCAGAGTGAATGGG MISMATCHES=0 NUM_BASES=5
+
+samtools view -h ${OUTGOING} > ${OUTGOING}.sam
+

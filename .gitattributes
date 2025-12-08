@@ -1,1 +1,4 @@
-bash/** filter=lfs diff=lfs merge=lfs -text
+bash/001_data/001_reference/chr8.fa filter=lfs diff=lfs merge=lfs -text
+bash/001_data/001_reference/chr8.gtf filter=lfs diff=lfs merge=lfs -text
+bash/001_data/001_reference/genes.refFlat filter=lfs diff=lfs merge=lfs -text
+bash/001_data/001_reference/STAR_index_chr8_MYC_masked/Genome filter=lfs diff=lfs merge=lfs -text

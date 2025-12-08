@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:86c21a6d90418e8221fa75e900a4ac7f981e2480a4ca50362de3a0541a60e621
-size 406
+# FILTER_AMBIGUOUS=true
+# MIN_UMIS_PER_CELL=1
+# UMI_BIAS_THRESHOLD=1
+# EDIT_DISTANCE=1
+#
+# TOTAL_BARCODES_TESTED=1
+# BARCODES_COLLAPSED=0
+# ESTIMATED_UMIS_COLLAPSED=0
+# AMBIGUOUS_BARCODES=0
+# ESTIMATED_AMBIGUOUS_UMIS=0
+# POLY_T_BIASED_BARCODES=0
+# POLY_T_BIASED_BARRCODE_UMIS=0
+# POLY_T_POSITION=8
+intended_barcode	neighbor_barcode	intended_size	neighbor_size	position	intended_base	neighbor_base	repaired
