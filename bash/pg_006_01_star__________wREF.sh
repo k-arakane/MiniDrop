@@ -1,7 +1,7 @@
 #!/bin/sh
 
 DIR1=006_fastq
-REF=001_data/001_reference/STAR_index_chr8_MYC_masked
+REF=001_data/001_reference/STAR_index_myc
 INCOMING=${DIR1}/pg_005_07_tiny1.cb.umi.qc.woAdapter.trimPolyA.fastq
 #-----------------------------------------------------------------------------80
 # Number of threads for STAR
@@ -15,5 +15,5 @@ NCORES=1
 STAR --runThreadN ${NCORES} \
   --genomeDir ${REF} \
   --readFilesIn ${INCOMING} \
-  --outFileNamePrefix ${DIR1}/pg_006_01_tiny1.star_ 
+  --outFileNamePrefix ${DIR1}/pg_006_01_tiny1.star_
 

@@ -1,10 +1,15 @@
 #!/bin/sh
 
+rm -f 001_data/001_reference/myc*
+rm -rf 001_data/001_reference/STAR_index_myc
 rm -rf 004_fastq
 rm -rf 005_bam
 rm -rf 006_fastq
 rm -rf 007_bam
 rm -rf 008_count
+
+python pg_001_02_ref_myc.py
+bash pg_001_03_ref_myc.sh
 
 bash pg_004_01_create_fastq.sh
 bash pg_005_01_fastq2bam.sh
@@ -22,3 +27,4 @@ bash pg_007_04_fix_beads.sh
 bash pg_007_05_fix2nd_beads.sh
 bash pg_008_01_counts.sh
 
+bash pg_007_06_fix_offset.sh
